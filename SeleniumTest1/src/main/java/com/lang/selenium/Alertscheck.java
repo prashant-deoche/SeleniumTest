@@ -1,7 +1,6 @@
 package com.lang.selenium;
 
 import java.time.Duration;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -29,6 +28,7 @@ public class Alertscheck {
         Alert alert= driver.switchTo().alert();
 		Thread.sleep(3000);
 		alert.accept();
+		
 		
 
 	}
