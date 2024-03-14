@@ -9,6 +9,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import utilities.Screenshot;
+
 public class Checkboxtest {
 	
 	WebDriver driver;
@@ -41,6 +43,7 @@ public class Checkboxtest {
 	public void testcase3() throws InterruptedException{
 		checkbox.click();
 		Thread.sleep(2000);
+		Screenshot.captureScreenShot(driver, "checkbox");
 		Assert.assertTrue(checkbox.isSelected());
 		
 	}

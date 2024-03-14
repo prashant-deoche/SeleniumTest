@@ -3,6 +3,19 @@
   <groupId>SeleniumTest1</groupId>
   <artifactId>SeleniumTest1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+  <plugins>
+  <plugin>
+  <groupId>org.apache.maven.plugins </groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.11.0</version>
+  <configuration>
+  <source>14</source>
+  <target>14</target>
+  </configuration>  
+  </plugin>
+  </plugins>
+  </build>
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -16,6 +29,13 @@
     <version>7.9.0</version>
     
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.2.5</version>
+</dependency>
+
   
   
   </dependencies>
